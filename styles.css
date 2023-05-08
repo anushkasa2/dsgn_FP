@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; 
+}
+
+a {
+    color: white;
+}
+
+/* Background Video */
+
+#screen video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 75vw;
+    width: 133.333333333vh;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Top Bar Elements */
+
+#top-bar {
+    position: fixed;
+    min-width: 100vw;
+    height: 30px;
+    background-color: black;
+    color: white;
+    top: 0;
+    margin: 0;
+}
+
+#apple {
+    position: absolute;
+    left: 1%;
+    margin-top: 5px;
+    height: 20px;
+    top: 5px;
+    margin: 0;
+}
+
+#apple:hover + #settings {
+    display:block;
+}
+
+#settings:hover {
+    display:block;
+}
+
+#settings {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    top: 25px;
+    left: 15px;
+    width: 180px;
+    padding: 5px;
+    text-align: left;
+    font-weight: 100;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+#clock {
+    position: absolute;
+    margin-top: 6px;
+    right: 15px;
+}
+
+#content {
+    width: inherit;
+    height: inherit;
+}
+
+/* Bottom Bar and Pop Ups */
+
+.icons {
+    position: fixed;
+    margin: 5px;
+    height: 50px;
+    bottom: 0;
+}
+
+.icons img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#notes {
+    left: 43vw;
+    margin-left: 60px;
+}
+
+#close_notes {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color:red;
+    width: 15px;
+    height: 15px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#list {
+    position: absolute;
+    width: 15%;
+    left: 0;
+    padding-left: 20px;
+    color: #6699cc;
+    text-decoration: underline;
+    font-size: small;
+}
+
+#text_display {
+    margin-left: 20%;
+    width: 70%;
+    font-size: small;
+}
+
+#notes_header img {
+    position: relative;
+    top: 0px;
+    left: 17%;
+    width: 83%;
+    border-top-right-radius: 15%;
+}
+
+.response {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    height: 50vh;
+    width: 60vw;
+    background-color: white;
+    top: 20%;
+    left: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* The Desktop Folders */
+
+figure {
+    position: absolute;
+    text-align: center;
+    cursor: move;
+}
+
+.folder {
+    height: 5%;
+    max-height: 80px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: solid white 4px;
+}
+
+#folder1 {
+    left: 75%;
+    top: 60px;
+}
+
+#folder2 {
+    left: 80%;
+    top: 200px;
+}
+
+#folder3 {
+    left: 5%;
+    top: 60px;
+}
+
+#folder4 {
+    left: 20%;
+    top: 20%;
+}
+
+#folder5 {
+    left: 40%;
+    top: 20%;
+}
+
+#folder6 {
+    left: 10%;
+    top: 40%;
+}
+
+/* shadow and white border needed */
+
+#folder7 {
+    left: 50%;
+    top: 35%;
+}
+
+#folder8 {
+    left: 10%;
+    top: 60%;
+}
+
+
+.folder_open {
+    display: none;
+    position: absolute;
+    color: white;
+    left: 25%;
+    top: 25%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+.folder_open img {
+    height: 300px;
+}
+
+.folder-caption {
+    color: white;
+}
+
+.image-display {
+    float: left;
+    position: absolute;
+    z-index: 1000;
+    height: 50%;
+    width: 30%;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+#art-image {
+    left: 35%;
+    top: 25%;
+}
+
+#art-image img {
+    max-height: 100%;
+    width: auto;
+}
+
+#work-image {
+    left: 25%;
+    top: 20%;
+    height: 20%;
+}
+
+#calendar-png {
+    filter: blur(2px);
+    max-height: 100%;
+    width: auto;
+}
+
+#random-image {
+    position: absolute;
+    height: 100px;
+    width: auto;
+    left: 35%;
+    top: 35%;
+    transition: transform 10s; /* Animation */
+    margin: 0 auto;
+}
+
+#loop-gif {
+    height: 100px;
+}
+
+.jpg {
+    height: 100%;
+}
+
+.folder-text {
+    color: black;
+    font-size: .55em;
+}
